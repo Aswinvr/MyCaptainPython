@@ -1,0 +1,4 @@
+#This program gets the radius as input and calculates the area of circle
+rad=float(input("Input the radius of the circle : "))
+A=22*rad*rad/7 #Pi = 22/7
+print("The area of the circle with radius ",rad,"is : ",A)
