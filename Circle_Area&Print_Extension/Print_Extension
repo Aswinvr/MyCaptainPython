@@ -1,0 +1,7 @@
+#This program accepts a filename from the user and print the extension of that.
+
+filename = input("Input the Filename: ") #To get the filename as input
+
+extns = filename.split(".") #Spilts the filename using '.' as a separator
+
+print ("The extension of the file is : " + repr(extns[1])) #extns[0] gives the name and extns[1] gives the extension
