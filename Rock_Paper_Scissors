@@ -1,6 +1,6 @@
 import random
 
-print("\t\tWelcome to Rock, Papers and Scissors\n")
+print("\t\tWelcome to Aswin's Rock, Papers and Scissors\n")
 print("The valid choices are :\n\t1) Rock\n\t2)Paper\n\t3)Scissors")
 
 while True: 
