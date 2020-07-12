@@ -1,0 +1,68 @@
+import random
+
+print("\t\tWelcome to Rock, Papers and Scissors\n")
+print("The valid choices are :\n\t1) Rock\n\t2)Paper\n\t3)Scissors")
+
+while True: 
+    print("Enter choice : ") 
+       
+    c = int(input("User turn: ")) 
+       
+    while c <1 or c > 3: 
+        c = int(input("enter valid input please : ")) 
+          
+  
+    if c == 1: 
+        c_name = 'Rock'
+    elif c == 2: 
+        c_name = 'paper'
+    else: 
+        c_name = 'scissor'
+          
+    print("user choice is: ", c_name)  
+  
+    c_c = random.randint(1, 3) 
+      
+    c_c = random.randint(1, 3) 
+  
+    if c_c == 1: 
+        c_c_name = 'Rock'
+    elif c_c == 2: 
+        c_c_name = 'paper'
+    else: 
+        c_c_name = 'scissor'
+          
+    print("Computer choice is: " , c_c_name) 
+  
+    print(c_name , " V/s " , c_c_name) 
+  
+    if (c_c==c):
+        print("Draw")
+
+    if(c_c!=c):
+        if((c == 1 and c_c == 2) or
+          (c == 2 and c_c ==1 )): 
+            print("paper wins \n ", end = "") 
+            res = "paper"
+          
+        elif((c == 1 and c_c == 3) or
+            (c == 3 and c_c == 1)): 
+            print("Rock wins \n", end = "") 
+            res = "Rock"
+        else: 
+            print("scissor wins \n", end = "") 
+            res = "scissor"
+   
+        if res == c_name: 
+            print(" You're the winner, Hurray !! ") 
+        else: 
+            print(" Oops, Computer wins. Good luck next time. ") 
+              
+    print("Wanan try again? (Y for yes, any other letter for no : )") 
+    ans = input() 
+  
+   
+    if ans != 'y' or ans != 'Y': 
+        break
+      
+print("\nThanks for playing") 
