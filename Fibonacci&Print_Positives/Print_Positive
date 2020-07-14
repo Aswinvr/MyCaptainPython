@@ -1,0 +1,33 @@
+#Program to get input in form od list and print the positive values from the list
+
+list1=[]
+list2=[]
+
+s1=int(input("Size of list1 : "))
+s2=int(input("Size of list2 : "))
+
+print("Enter elements in list1[] : ")
+for i in range (0,s1):
+    n=int(input())
+    list1.append(n)
+    i+=1
+print("Elements in list1 :")
+for j in list1:
+    print(j)
+print("Positive elements are : ")
+for i in list1:
+    if i>0:
+        print(i)
+
+print("Enter elements in list2[] : ")
+for i in range (0,s2):
+    k=int(input())
+    list2.append(k)
+    i+=1
+print("Elements in list2 : ")
+for j in list2:
+    print(j)
+print("Positive elements are : ")
+for i in list2:
+    if i>0:
+        print(i)
