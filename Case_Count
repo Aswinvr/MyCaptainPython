@@ -1,0 +1,16 @@
+def case_count(s):
+    U_C=0
+    L_C=0
+    for c in s:
+        if c.isupper():
+            U_C+=1
+        elif c.islower():
+            L_C+=1
+        else:
+            pass
+    print("Length of the given string : ", len(s))
+    print("Number of upper case letters : ",U_C)
+    print("Number of lower case letters : ",L_C)
+
+s=str(input("Enter the string to be tested : "))
+case_count(s)
