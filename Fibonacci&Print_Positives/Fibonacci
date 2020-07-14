@@ -1,0 +1,24 @@
+# Program to display the Fibonacci sequence up to given number of terms
+
+nt = int(input("Number of terms you need to be printed? "))
+
+# first two terms
+n1=0
+n2=1
+c=0
+
+# check if the number of terms is valid
+if nt <= 0:
+   print("Please enter a positive integer")
+elif nt == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while c < nt:
+       print(n1)
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       c=c+1
